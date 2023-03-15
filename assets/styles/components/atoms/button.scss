@@ -1,0 +1,44 @@
+.button {
+    color: var(--color--red);
+    font-family: "Epilogue", sans-serif;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 18px 22px;
+
+    &--purple {
+        background: var(--color--purple);
+        color: white;
+    }
+    &--orange {
+        background: var(--color--orange);
+        color: white;
+    }
+
+    &--ghost {
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+
+    &--transparent {
+        color: white;
+        background: var(--color--transparent);
+        display: none;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        &--transparent {
+            color: white;
+            background: var(--color--transparent);
+            display: inline;
+            border: 1px solid rgba(255, 255, 255, 0.295743);
+            border-radius: 6px;
+        }
+    }
+}
